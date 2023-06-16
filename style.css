@@ -1,0 +1,136 @@
+body{
+    background: linear-gradient(to right, rgb(231, 206, 67),rgb(143, 46, 143));
+    /*these two lines make it so even if you resize the window the color stays as */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-image: url("download.jpg")
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    */
+    
+
+
+}
+h1{
+    color: white;
+    font-family: "Kablammo", sans-serif;
+    border-top-style: dotted;
+    border-left-style: dotted;
+    border-left-color: blue;
+}
+p{
+    /*text attributes*/
+    background-color: gray;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+    /*border attributes*/
+    border-style: outset;
+    border-width: 5px;
+    border-color: green;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.odd{
+    color: red;
+}
+
+.even{
+    color: blue;
+}
+
+#box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: dodgerblue;
+
+    /* smarter to use percent becuase it resizes everything
+    based on your window size
+    can also do like auto which makes it so your boxes and such
+    stick to one side of the page*/
+    margin: 50px;
+}
+#box2{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: greenyellow;
+}
+
+img{
+    float: right;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 40px;
+    text-align: center;
+    background: tomato;
+}
+
+#box1{
+    border: 4px solid;
+    height: 250px;
+    width: 250px;
+    font-size: 225px;
+    text-align: center;
+    background-color: skyblue;
+
+    transform: translate(50px, 50px);
+
+    /* position: relative;
+
+    top: 50px;
+    left: 50px; */
+}
+
+#box2{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+
+    /*use viewport if it does not have a parent to direct to
+    also if you use a div and this is the child of like box1
+    if you change values of box1, box2 will just follow
+    "sticky" stays at the top or bottom of the port*/
+    position: absolute;
+
+    top: 0px;
+}
+
+a:link{
+    color: lawngreen;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    color:tomato;
+}
+
+a:active{
+    color: yellow;
+}
+
+button:hover{
+    background-color: lightgrey;
+}
+
+
+/* can do like even or odd and such in the () too
+    li:nth-child(2){
+    background-color: yellow;
+} */
